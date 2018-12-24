@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'seo',
+    'map',
     'rest',
     'crispy_forms',
     'write',

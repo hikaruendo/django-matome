@@ -1,0 +1,26 @@
+{% extends 'write/base.html' %}
+
+
+{% block 'content' %}
+
+<div class="container">
+<!-- <img src="..." class="img-fluid" alt="Responsive image"> -->
+<form action="{% url 'seo' %}" method="POST">
+    {% csrf_token %}
+    <div class="form-row" style="margin-top:7%">
+        <div class="row">
+            <div class="col-sm-6">
+                <label>Keyword</label>
+                <input type="text" class="form-control" id="inlineformInputEmail1" placeholder="Enter Keyword" name="fname">
+    
+            <button class="btn btn-secondary btn-lg" style="margin-top:7%">PUT</button>
+            </div>
+
+            <h3>{{ result }}</h3>
+    
+    </div>
+    </div>
+</div>
+    
+  </form>
+{% endblock %}
